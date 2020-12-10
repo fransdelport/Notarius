@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.DataAccess", "Notarius.DataAccess.csproj", "{A162821E-11A0-452D-8C19-D53BD9984ED5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.Shared.DataModel", "..\Notarius.Shared.DataModels\Notarius.Shared.DataModel.csproj", "{857F9B75-4F49-41D3-9340-B954F0852F1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.API", "..\Notarius.API\Notarius.API.csproj", "{1F542706-7FA9-46A4-A8CC-C56A9BA07886}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.WebAPI", "..\Notarius.WebAPI\Notarius.WebAPI.csproj", "{8CE1E20D-D15C-444C-9B60-CB6EDA39D16C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.Shared.DTO", "..\Notarius.Shared.DTO\Notarius.Shared.DTO.csproj", "{C92A9D42-6FF2-4369-A0F1-95CDE6C377D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.Client.DataModel", "..\Notarius.Client.DataModel\Notarius.Client.DataModel.csproj", "{8B288943-A5B4-414E-8FE7-261A1E26BC94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.Client.Components", "..\Notarius.Client.Components\Notarius.Client.Components.csproj", "{5C592494-EAF4-4933-B09B-D6438DF12962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.Client", "..\Notarius.Client\Notarius.Client.csproj", "{C0E4A8B3-A818-44ED-951F-155C39488D5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.ServerApplication", "..\Notarius.ServerApplication\Notarius.ServerApplication.csproj", "{27CB2D45-3545-42F4-8FB3-AA1CA01B708F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.Client.Services", "..\Notarius.Client.Services\Notarius.Client.Services.csproj", "{821E0C40-AD26-45C1-93C4-D6F7BB675B33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notarius.ClientApplication", "..\Notarius.ClientApplication\Notarius.ClientApplication.csproj", "{B668953F-8D7F-4608-913A-4FD3570FE8ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A162821E-11A0-452D-8C19-D53BD9984ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A162821E-11A0-452D-8C19-D53BD9984ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A162821E-11A0-452D-8C19-D53BD9984ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A162821E-11A0-452D-8C19-D53BD9984ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857F9B75-4F49-41D3-9340-B954F0852F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857F9B75-4F49-41D3-9340-B954F0852F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857F9B75-4F49-41D3-9340-B954F0852F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857F9B75-4F49-41D3-9340-B954F0852F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F542706-7FA9-46A4-A8CC-C56A9BA07886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F542706-7FA9-46A4-A8CC-C56A9BA07886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F542706-7FA9-46A4-A8CC-C56A9BA07886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F542706-7FA9-46A4-A8CC-C56A9BA07886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE1E20D-D15C-444C-9B60-CB6EDA39D16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE1E20D-D15C-444C-9B60-CB6EDA39D16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE1E20D-D15C-444C-9B60-CB6EDA39D16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE1E20D-D15C-444C-9B60-CB6EDA39D16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92A9D42-6FF2-4369-A0F1-95CDE6C377D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92A9D42-6FF2-4369-A0F1-95CDE6C377D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92A9D42-6FF2-4369-A0F1-95CDE6C377D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92A9D42-6FF2-4369-A0F1-95CDE6C377D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B288943-A5B4-414E-8FE7-261A1E26BC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B288943-A5B4-414E-8FE7-261A1E26BC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B288943-A5B4-414E-8FE7-261A1E26BC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B288943-A5B4-414E-8FE7-261A1E26BC94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C592494-EAF4-4933-B09B-D6438DF12962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C592494-EAF4-4933-B09B-D6438DF12962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C592494-EAF4-4933-B09B-D6438DF12962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C592494-EAF4-4933-B09B-D6438DF12962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E4A8B3-A818-44ED-951F-155C39488D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E4A8B3-A818-44ED-951F-155C39488D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E4A8B3-A818-44ED-951F-155C39488D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E4A8B3-A818-44ED-951F-155C39488D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27CB2D45-3545-42F4-8FB3-AA1CA01B708F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CB2D45-3545-42F4-8FB3-AA1CA01B708F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CB2D45-3545-42F4-8FB3-AA1CA01B708F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CB2D45-3545-42F4-8FB3-AA1CA01B708F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821E0C40-AD26-45C1-93C4-D6F7BB675B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821E0C40-AD26-45C1-93C4-D6F7BB675B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821E0C40-AD26-45C1-93C4-D6F7BB675B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821E0C40-AD26-45C1-93C4-D6F7BB675B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B668953F-8D7F-4608-913A-4FD3570FE8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B668953F-8D7F-4608-913A-4FD3570FE8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B668953F-8D7F-4608-913A-4FD3570FE8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B668953F-8D7F-4608-913A-4FD3570FE8ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DEDA0EA-98B0-4E11-B8EF-146219EAE5A5}
+	EndGlobalSection
+EndGlobal
