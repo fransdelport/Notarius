@@ -1,0 +1,54 @@
+﻿@inherits PatientRowBase
+@{
+    var cssClass = Patient.HasDetails ? "table-success" : "";
+}
+
+<tr class="@cssClass">
+    <td>
+        <img src="@($"Images/1-small.jpg")"
+             class="rounded-circle" />
+    </td>
+    <td>@Patient.MRN</td>
+    <td>@Patient.Firstname</td>
+    <td>@Patient.Lastname</td>
+    <td>
+
+      
+
+        @*<a href="@($"sleutelwoorddetail/{Patient.MRN}")" class="btn btn-primary table-btn">
+                <i class="fas fa-info-circle"></i>
+            </a>*@
+        @*<Helptip Text="Edit"></Helptip>*@
+        <a href="@(ParentUrl)" class="btn btn-primary table-btn" hidden="@EditBTN"
+           @onclick="e => Patient.ShowDetails = !Patient.ShowDetails">
+            <i class="fas fa-edit"></i>
+        </a>
+
+
+        <DialogBox @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"
+                   ConfirmationMessage=@($"Are you sure you want to delete \"{Patient.Firstname}\"")>
+        </DialogBox>
+
+
+        <Helptip @ref="Help" Text="Delete" />
+        <a href="@(ParentUrl)" class="btn btn-primary table-btn" hidden="@DeleteBTN" @onmouseover="ShowHelp" @onclick="Delete">
+            <i class="fas fa-trash"></i>
+        </a>
+
+
+        <a href="@(ParentUrl)" class="btn btn-primary table-btn" hidden="@SelectBTN" @onclick="Select">
+            <i class="fas fa-thumbs-up"></i>
+        </a>
+
+    </td>
+</tr>
+
+
+@if (Patient.ShowDetails)
+{
+    <tr>
+        <td colspan="5">
+            <PatientDetails Patient="Patient" OnShowToggle="ShowToggle"></PatientDetails>
+        </td>
+    </tr>
+}

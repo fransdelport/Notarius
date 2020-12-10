@@ -1,0 +1,78 @@
+﻿@inherits AddPatientDialogBase
+
+
+
+
+@if (ShowDialog)
+{
+    <div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleLabel">Add a patient</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <EditForm Model="@Patient" OnValidSubmit="@HandleValidSubmit">
+
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <div class="form-group">
+                            <label for="mrn">MRN: </label>
+                            <InputText id="mrn" class="form-control"
+                                       @bind-Value="@Patient.MRN"
+                                       placeholder="Enter first name"></InputText>
+                            <ValidationMessage For="@(() => Patient.MRN)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname">First name: </label>
+                            <InputText id="firstname" class="form-control"
+                                       @bind-Value="@Patient.Firstname"
+                                       placeholder="Enter first name"></InputText>
+                            <ValidationMessage For="@(() => Patient.Firstname)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname">Last name: </label>
+                            <InputText id="lastname" class="form-control"
+                                       @bind-Value="@Patient.Lastname"
+                                       placeholder="Enter last name"></InputText>
+                            <ValidationMessage For="@(() => Patient.Lastname)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Adress: </label>
+                            <InputText id="address" class="form-control" @bind-Value="@Patient.Address" placeholder="Enter address"></InputText>
+                            <ValidationMessage For="@(() => Patient.Address)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City: </label>
+                            <InputText id="city" class="form-control" @bind-Value="@Patient.City" placeholder="Enter city"></InputText>
+                            <ValidationMessage For="@(() => Patient.City)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State: </label>
+                            <InputText id="state" class="form-control" @bind-Value="@Patient.State" placeholder="Enter state"></InputText>
+                            <ValidationMessage For="@(() => Patient.State)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip: </label>
+                            <InputText id="zip" class="form-control" @bind-Value="@Patient.Zip" placeholder="Enter Zip"></InputText>
+                            <ValidationMessage For="@(() => Patient.Zip)" />
+                        </div>
+                        @*<button type="submit" class="btn @ThemeClass.ButtonClass">Save employee</button>*@
+                        <button type="submit" class="btn btn-outline-primary">Save patient</button>
+                        <a class="btn btn-outline-primary" @onclick="@Close">Close</a>
+                    </EditForm>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}

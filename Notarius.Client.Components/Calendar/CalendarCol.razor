@@ -1,0 +1,20 @@
+﻿@inherits CalendarColBase
+<h6>@Day</h6>
+@{
+    DateTime dt;
+    string sdt = DateTime.Today.AddHours(-4).ToShortDateString();
+    DateTime.TryParse(sdt + "07:45:00", out dt);
+    dt = dt.AddHours(8);
+    
+
+    @for (int x = 1; x < 37; x++)
+    {
+        ScheduleUI sched = new ScheduleUI();
+        sched.ScheduleTime = dt.ToString();
+        <CalendarSlot @ref="CalSlot" Scheduler="sched" ScheduleDate="@dt" Day="@Day" DayOfWeek="@DayOfWeek">
+
+        </CalendarSlot>
+        dt = dt.AddMinutes(15);
+
+    }
+}

@@ -1,0 +1,34 @@
+﻿@inherits PatientsListBase
+
+
+@if (Patients == null)
+{
+    <p><em>Please wait, loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>MRN</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var patient in Patients)
+            {
+                <PatientRow PatientDelete="@PatientDeleted" Patient="patient"></PatientRow>
+            }
+        </tbody>
+    </table>
+
+}
+<button @onclick="QuickAddPatient" class="btn btn-dark table-btn quick-add-btn">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+
+<AddPatientDialog @ref="AddPatientDialog" CloseCallback="@PatientAddDialog_OnDialogClose"></AddPatientDialog>
+
+
+
+

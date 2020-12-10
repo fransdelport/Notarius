@@ -1,0 +1,38 @@
+﻿@inherits SelectPatientDialogBase
+
+@if (ShowDialog)
+{
+    <div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    @if (Patients == null)
+                    {
+                        <p><em>Please wait, loading...</em></p>
+                    }
+                    else
+                    {
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>MRN</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var patient in Patients)
+                                {
+                                    <PatientRow PatientSelected="PatientSelect" NotEditable="true" Patient="patient" ParentUrl="/calendar"></PatientRow>
+                                }
+                            </tbody>
+                        </table>
+
+                    }
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+}

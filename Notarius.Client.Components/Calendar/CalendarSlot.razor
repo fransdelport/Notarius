@@ -1,0 +1,16 @@
+﻿@inherits CalendarSlotBase
+
+
+<tr class="calendarslot">
+    <td class="scheduletime">
+        @ScheduleTime
+    </td>
+    <td>
+        <div class="calendarline">
+            @*<a class="sheduleline"> _______________________________________</a>*@
+            <button id=@ID class=@CSSClass style="height:35px;width:250px" @onclick="@(e => ScheduleClicked(e,ID))">@Scheduler.ToString()</button>
+        </div>
+    </td>
+</tr>
+<SelectPatientDialog @ref="SelectPatientDialog" CloseCallback="SelectAddDialog_OnDialogClose" SelectCallback="SelectCallback"></SelectPatientDialog>
+
