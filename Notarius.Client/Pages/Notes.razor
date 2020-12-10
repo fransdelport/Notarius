@@ -1,0 +1,27 @@
+﻿@inherits NotesBase
+@page "/notes"
+
+<EditForm Model="@Patient" OnValidSubmit="@HandleValidSubmit">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <dev>
+            <a href="/notes" class="btn btn-primary table-btn" 
+               @onclick="DictateClicked">
+                <i class="fas fa-edit"></i>
+            </a>
+        </dev>
+        <label for="mrn">MRN: </label>
+        <InputText id="mrn" class="form-control"
+                   @bind-Value="@Text"
+                   placeholder="Enter data"></InputText>
+
+    </div>
+
+   
+    @*<button type="submit" class="btn @ThemeClass.ButtonClass">Save employee</button>*@
+    <button type="submit" class="btn btn-outline-primary">Save note</button>
+    <a class="btn btn-outline-primary">Close</a>
+</EditForm>

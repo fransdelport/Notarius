@@ -1,0 +1,32 @@
+﻿@inherits IndexBase
+@page "/"
+
+<img src="/Images/add-key_medium.png" width="120" height="120">
+
+<a href="@($"patientslist/")" class="btn btn-home-page-link table-btn"
+        <HomePageLink @ref="PatientHomeLink" ImageSRC="/Images/Patients.jpg"/>
+        <i class="fas fa-edit"></i>     Patient List
+</a>
+
+<img src="/Images/add-key_medium.png" width="120" height="120">
+
+<a href="@($"calendar/")" class="btn btn-home-page-link table-btn"
+    <HomePageLink @ref="PatientHomeLink" ImageSRC="/Images/calendar.png"/>
+ <i class="fas fa-edit"></i>    Schedule
+</a>
+
+<img src="/Images/add-key_medium.png" width="120" height="120">
+
+<a href="@($"notes/")" class="btn btn-home-page-link table-btn">
+    <HomePageLink @ref="PatientHomeLink" ImageSRC="/Images/notes.jpg" />
+    <i class="fas fa-info-circle"></i>   Notes
+</a>
+
+<img src="/Images/add-key_medium.png" width="120" height="120">
+
+<a href="@($"admin/")" class="btn btn-home-page-link table-btn">
+    <HomePageLink @ref="PatientHomeLink" ImageSRC="/Images/admin1.jpg" />
+    <i class="fas fa-info-circle"></i>   Admin
+</a>
+
+

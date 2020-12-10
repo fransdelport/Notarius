@@ -1,0 +1,21 @@
+﻿@inherits CalendarBase
+@page "/calendar"
+
+<h1 class="page-title">Calendar</h1>
+<tr>
+    <td class="calendarday">
+        <CalendarCol @ref="CalCol" Day="Monday" DayOfWeek="1"></CalendarCol>
+    </td>
+    <td class="calendarday">
+        <CalendarCol @ref="CalCol" Day="Tuesday"  DayOfWeek="2"></CalendarCol>
+    </td>
+    <td class="calendarday">
+        <CalendarCol @ref="CalCol" Day="Wednesday"  DayOfWeek="3"></CalendarCol>
+    </td>
+    <td class="calendarday">
+        <CalendarCol @ref="CalCol" Day="Thursday"  DayOfWeek="4"></CalendarCol>
+    </td>
+    <td class="calendarday">
+        <CalendarCol @ref="CalCol" Day="Friday"  DayOfWeek="5"></CalendarCol>
+    </td>
+</tr>
