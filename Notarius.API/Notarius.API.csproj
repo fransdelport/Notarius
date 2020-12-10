@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notarius.DataAccess\Notarius.DataAccess.csproj" />
+    <ProjectReference Include="..\Notarius.Shared.DataModels\Notarius.Shared.DataModel.csproj" />
+    <ProjectReference Include="..\Notarius.Shared.DTO\Notarius.Shared.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
